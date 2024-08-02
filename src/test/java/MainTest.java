@@ -74,9 +74,9 @@ public class MainTest {
     @DisplayName("Hamburger sınıfı addAddition methodları doğru çalışıyor mu?")
     @Test
     public void testHamburgerAddAdditionMethods() throws NoSuchFieldException {
-        hamburger.addHamburgerAddition1("test", 3);
-        hamburger.addHamburgerAddition2("test", 3);
-        hamburger.addHamburgerAddition3("test", 3);
+        hamburger.addHamburgerAddition1("test", 3.0);
+        hamburger.addHamburgerAddition2("test", 3.0);
+        hamburger.addHamburgerAddition3("test", 3.0);
         hamburger.itemizeHamburger();
         assertEquals(hamburger.getPrice(), 13);
 
@@ -108,8 +108,8 @@ public class MainTest {
     @DisplayName("Healthy Burger sınıfı addAddition methodları doğru çalışıyor mu?")
     @Test
     public void testHealthyBurgerAddAdditionMethods() throws NoSuchFieldException {
-        healthyBurger.addHealthyAddition1("test", 2);
-        healthyBurger.addHealthyAddition2("test", 2);
+        healthyBurger.addHealthyAddition1("test", 2.0);
+        healthyBurger.addHealthyAddition2("test", 2.0);
         healthyBurger.itemizeHamburger();
         assertEquals(healthyBurger.getPrice(), 9.67);
     }
